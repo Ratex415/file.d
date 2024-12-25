@@ -1,32 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>file.d documentation</title>
-  <link rel="icon" type="image/png" href="/file.d/static/file.d.png" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="A blazing fast tool for building data pipelines: read, process, and output events.">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaTex Shop - Blox Fruits</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'file.d',
-      repo: 'https://github.com/ozontech/file.d',
-      loadSidebar: true,
-      loadNavbar: true,
-      subMaxLevel: 2,
-      maxLevel: 1,
-      coverpage: true,
-      auto2top: true,
-      markdown: {
-        gfm: true
-      }
-    }
-  </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify-copy-code"></script>
+    <header>
+        <div class="logo">
+            <h1>RaTex Shop</h1>
+            <p>خدمات لعبة Blox Fruits</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#about">عن المتجر</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>مرحبًا بك في RaTex Shop</h2>
+        <p>نقدم لك أفضل الخدمات في لعبة Blox Fruits. احصل على العناصر، الأسلحة، والشخصيات التي تحتاجها!</p>
+    </section>
+
+    <section id="services">
+        <h2>خدماتنا</h2>
+        <div class="service-item">
+            <h3>شراء أسلحة</h3>
+            <p>احصل على أفضل الأسلحة في اللعبة لمساعدتك في مغامراتك!</p>
+        </div>
+        <div class="service-item">
+            <h3>تدريب في اللعبة</h3>
+            <p>نقدم لك تدريبات لرفع مستواك في اللعبة بسرعة.</p>
+        </div>
+        <div class="service-item">
+            <h3>شراء شخصيات</h3>
+            <p>احصل على شخصيات قوية لتحقق أفضل أداء في Blox Fruits.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>عن RaTex Shop</h2>
+        <p>RaTex Shop هو المتجر الأفضل لتلبية احتياجات لاعبي Blox Fruits. نحن نحرص على تقديم أفضل الخدمات وأجود العناصر لتحسين تجربتك في اللعبة.</p>
+    </section>
+
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>لأي استفسار أو طلب خاص، يمكنك الاتصال بنا عبر:</p>
+        <form>
+            <label for="name">اسمك:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024 RaTex Shop</p>
+    </footer>
 </body>
-</html>
+              </html>
+
+              /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#services .service-item {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form label, form textarea, form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+// script.js
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('تم إرسال رسالتك بنجاح!');
+});
